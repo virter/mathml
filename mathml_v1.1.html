@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MathML</title>
+  </head>    
+  <style>
+      .nav {
+        display: block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%; height: auto;
+        border-bottom: 2px solid #e7e7e7;
+        overflow: hidden;
+        text-align: center;
+        z-index: 3;
+      }
+      
+      .nav button {
+        display: inline-block;
+        height: 30px;
+        margin: 15px;
+      }
+      
+      #sensor1 {
+        display: block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%; height: 100%;
+        background-color: transparent;
+        z-index: 3;
+      }
+      
+      #wrap1 {
+        display: none;
+        position: absolute;
+        top: 60px; left: 0px;
+        width: 100%; height: calc(100% - 62px);
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .math-wrap1 {
+        display: none;
+      }
+
+      #math1 {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        z-index: 2;
+      }
+  </style>
+  <body>
+    <div class="nav">
+      <button class="view">Показать формулу</button>
+    </div>
+    <div id="wrap1">
+    <div id="sensor1"></div>
+    <math id="math1" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+        <mrow>
+          <msubsup>
+            <mi>&#x03B2;</mi>
+            <mn><i>i,j</i></mn>
+            <mn>(0)</mn>
+          </msubsup>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfenced separators="" open="{" close="">
+            <mtable>
+              <mtr>
+                <mtd style="text-align: left;">
+                  <mpadded width="+5px">
+                  <mrow>
+                    <msubsup>
+                      <mi>&#x03B1;</mi>
+                      <mn><i>i,j</i></mn>
+                      <mn>(0)</mn>
+                    </msubsup>
+                    <mo>+</mo>
+                    <mpadded width="+5px">
+                      <munderover>
+                        <mi style="font-size: 25px;">&#x03A3;</mi>
+                        <mrow><mi>k</mi><mo>=</mo><mn>-2</mn></mrow>
+                        <mi>-1</mi>
+                      </munderover>
+                    </mpadded>
+                    <mpadded width="+5px">
+                      <mfenced>
+                        <mrow>
+                          <msubsup>
+                            <mi>&#x03B1;</mi>
+                            <mn><i>i,k</i></mn>
+                            <mn>(2)</mn>
+                          </msubsup>
+                          <mo>+</mo>
+                          <munderover>
+                            <mi style="font-size: 25px;">&#x03A3;</mi>
+                            <mrow><mi>l</mi><mo>=</mo><mn>-2</mn></mrow>
+                            <mi>-1</mi>
+                          </munderover>
+                          <msubsup>
+                            <mi>&#x03B1;</mi>
+                            <mn><i>i,l</i></mn>
+                            <mn>(4)</mn>
+                          </msubsup>
+                          <msubsup>
+                            <mi>d</mi>
+                            <mn><i>k</i></mn>
+                            <mn>(<i>l</i>)</mn>
+                          </msubsup>
+                        </mrow>
+                      </mfenced>
+                    </mpadded>
+                    <msubsup>
+                      <mi>d</mi>
+                      <mn><i>j</i></mn>
+                      <mn>(<i>k</i>)</mn>
+                    </msubsup>
+                  </mrow>
+                  </mpadded>
+                  <mo>,</mo>
+                </mtd>
+                <mtd style="text-align: left;">
+                  <mrow>
+                    <mi>j</mi>
+                    <mo>=</mo>
+                    <mover>
+                      <mrow><mi>-2</mi>,<mi>2</mi></mrow>
+                      <mo>&OverBar;</mo>
+                    </mover>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd style="text-align: left;">
+                  <mpadded width="+5px">
+                  <mrow>
+                    <msubsup>
+                      <mi>&#x03B1;</mi>
+                      <mn><i>i,j</i></mn>
+                      <mn>(0)</mn>
+                    </msubsup>
+                  </mrow>
+                  </mpadded>
+                  <mo>,</mo>
+                </mtd>
+                <mtd style="text-align: left;">
+                  <mrow>
+                    <mi>j</mi>
+                    <mo>=</mo>
+                    <mover>
+                      <mrow><mi>3</mi>,<mi><i>N</i></mi><mo>-</mo><mi>3</mi></mrow>
+                      <mo>&OverBar;</mo>
+                    </mover>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd style="text-align: left;">
+                  <mpadded width="+5px">
+                  <mrow>
+                    <msubsup>
+                      <mi>&#x03B1;</mi>
+                      <mn><i>i,j</i></mn>
+                      <mn>(0)</mn>
+                    </msubsup>
+                    <mo>+</mo>
+                    <mpadded width="+5px">
+                      <munderover>
+                        <mi style="font-size: 25px;">&#x03A3;</mi>
+                        <mrow><mi>k</mi><mo>=</mo><mi>N</mi><mo>+</mo><mi>1</mi></mrow>
+                        <mrow><mi>N</mi><mo>+</mo><mi>2</mi></mrow>
+                      </munderover>
+                    </mpadded>
+                    <mpadded width="+5px">
+                      <mfenced>
+                        <mrow>
+                          <msubsup>
+                            <mi>&#x03B1;</mi>
+                            <mn><i>i,k</i></mn>
+                            <mn>(2)</mn>
+                          </msubsup>
+                          <mo>+</mo>
+                          <munderover>
+                            <mi style="font-size: 25px;">&#x03A3;</mi>
+                            <mrow><mi>l</mi><mo>=</mo><mi>N</mi><mo>+</mo><mi>1</mi></mrow>
+                            <mrow><mi>N</mi><mo>+</mo><mi>2</mi></mrow>
+                          </munderover>
+                          <msubsup>
+                            <mi>&#x03B1;</mi>
+                            <mn><i>i,l</i></mn>
+                            <mn>(4)</mn>
+                          </msubsup>
+                          <msubsup>
+                            <mi>d</mi>
+                            <mn><i>k</i></mn>
+                            <mn>(<i>l</i>)</mn>
+                          </msubsup>
+                        </mrow>
+                      </mfenced>
+                    </mpadded>
+                    <msubsup>
+                      <mi>d</mi>
+                      <mn><i>j</i></mn>
+                      <mn>(<i>k</i>)</mn>
+                    </msubsup>
+                  </mrow>
+                  </mpadded>
+                  <mo>,</mo>
+                </mtd>
+                <mtd style="text-align: left;">
+                  <mrow>
+                    <mi>j</mi>
+                    <mo>=</mo>
+                    <mover>
+                      <mrow><mi><i>N</i></mi><mo>-</mo><mi>2</mi>,<mi><i>N</i></mi><mo>+</mo><mi>2</mi></mrow>
+                      <mo>&OverBar;</mo>
+                    </mover>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mfenced>
+        </mrow>
+      </mrow>
+      <mtable>
+    </math>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      jQuery('.view').click(function() {
+          if (jQuery('#wrap1').hasClass('active')) {
+              jQuery(this).html('Показать формулу');
+              jQuery('#wrap1').fadeOut('slow', function() {
+                  jQuery(this).removeClass('active');
+              });
+          } else {
+              jQuery(this).html('Скрыть формулу');
+              jQuery('#wrap1').fadeIn('slow', function() {
+                  jQuery(this).addClass('active');
+              });
+          }
+      });
+      jQuery('#sensor1').mousemove(function(e) {
+          var t = jQuery(this);
+          console.log(e);
+          jQuery('#math1').attr('style', 'top: ' + (e.pageY - 60) + 'px; left: ' + e.pageX + 'px;');
+      }).mouseout(function() {
+          jQuery('#math2').removeAttr('style');
+      });
+    </script>
+  </body>
+</html>
